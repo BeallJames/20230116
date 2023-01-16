@@ -6,15 +6,16 @@ def play():
 
     if user == computer:
         return 'tie'
-    if is_win
+    if is_win:
         return 'win'
-    if is_lose
+    if is_lose:
         return 'lose'
+    return 'error'
 
 def is_win(player, opponent):
-    if (player == 'r' and opponent == 's') or (player == 's' and opponent == 'p') or (player == 'p' and opponent == 'r')
-    return True
+    if (player == 'r' and opponent == 's') or (player == 's' and opponent == 'p') or (player == 'p' and opponent == 'r'):
+        return True
 
 def is_lose(player, opponent):
-    if (player == 'r' and opponent == 'p') or (player == 's' and opponent == 'r') or (player == 'p' and opponent == 's')
-    return True
+    if (player == 'r' and opponent == 'p') or (player == 's' and opponent == 'r') or (player == 'p' and opponent == 's'):
+        return True
