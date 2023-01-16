@@ -8,9 +8,9 @@ def play():
         return 'tie'
     if is_win(user, computer):
         return 'win'
-    if is_lose(user, computer):
-        return 'lose'
-    return 'error'
+    # if is_lose(user, computer):
+    #     return 'lose'
+    return 'lose'
 
 def is_win(player, opponent):
     if (player == 'r' and opponent == 's') or (player == 's' and opponent == 'p') or (player == 'p' and opponent == 'r'):
