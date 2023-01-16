@@ -6,7 +6,7 @@ def play():
 
     if user == computer:
         return 'tie ' + computer
-        return computer
+        # return computer
     if is_win(user, computer):
         return 'win ' + computer
         # return computer
