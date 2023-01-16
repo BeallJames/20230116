@@ -1,14 +1,14 @@
 import random
 
 def play():
-    user = input("'r' for rock, 'p' for paper, 's' for scissors")
+    user = input("choice: 'r' for rock, 'p' for paper, 's' for scissors\n")
     computer = random.choice(['r', 'p', 's'])
 
     if user == computer:
         return 'tie'
-    if is_win:
+    if is_win(user, computer):
         return 'win'
-    if is_lose:
+    if is_lose(user, computer):
         return 'lose'
     return 'error'
 
